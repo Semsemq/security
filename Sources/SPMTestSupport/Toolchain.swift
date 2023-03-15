@@ -45,7 +45,7 @@ extension Destination {
 extension UserToolchain {
     public static var `default`: Self {
         get throws {
-            return try .init(destination: Destination.default)
+            return try .init(destination: Destination.hostDestination())
         }
     }
 }
